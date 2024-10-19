@@ -1,0 +1,255 @@
+.body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #282c34;
+  color: white;
+}
+
+.Header {
+  background-color: #f1e4c3;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+footer {
+  display: flex;
+}
+
+#header-top {
+  display: flex;
+  width: 100%;
+}
+#header-top h1,
+#header-top a {
+  padding: 40px 0; /* Add 20px padding to the top and bottom */
+  margin: 0 auto; /* Center the elements horizontally */
+}
+
+#header-top h1 {
+  font-size: calc(10px + 2vmin);
+  color: #597e52;
+  font-family: "Orelega One";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  letter-spacing: -3px;
+}
+
+#header-top a {
+  color: black;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#header-body {
+  display: flex;
+  height: 550px;
+  justify-content: space-between;
+  background: radial-gradient(circle at 50% 100%, transparent 50%, #f1e4c3 50%),
+    #c6a969;
+}
+#header-img {
+  padding-left: 40px;
+  width: 100%; /* Set the width to 100% initially */
+}
+
+#header-body > div {
+  flex: 1 1 50%;
+  width: 697px;
+  height: 185px;
+  flex-shrink: 0;
+}
+
+#header-body h2 {
+  color: #561c24;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#homeNames a {
+  color: green;
+  text-decoration: none;
+}
+
+#homeNames a:hover {
+  color: tan;
+  font-weight: bold;
+}
+
+.recipe-info {
+  color: black;
+  text-decoration: none;
+}
+
+#header-body p {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Footer {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #597e52;
+  color: white;
+  font-size: 20px;
+}
+
+#footersocials a {
+  font-size: "30px";
+  color: #313131;
+  text-decoration: none;
+}
+
+.social-icon {
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Body {
+  font-size: calc(3px + 1vmin);
+  background-color: #f1e4c3;
+}
+
+.Body h1 {
+  font-size: calc(30px + 2vmin);
+  text-align: center;
+}
+
+.recipe-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group img {
+  width: 400px;
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  padding: 20px;
+  font-size: 25px;
+}
+
+.text h4 {
+  font-size: 40px;
+}
+
+.text li {
+  margin-bottom: 20px;
+}
+
+.homepage {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px;
+}
+
+.carousel-box {
+  background-color: #f1e4c3;
+  min-height: 93vh;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.carousel h3 {
+  font-size: 40px;
+  color: black;
+}
+
+.carousel {
+  background-color: #f1e4c3;
+  text-align: right;
+}
+
+.link-styles {
+  text-decoration: none;
+  display: boxed;
+  font-size: 50px;
+  color: black;
+  padding: 40px 40px;
+}
+
+/* Add a media query for screens with a maximum width of 768px (typical mobile screens) */
+@media (max-width: 1000px) {
+  /* Adjust the font size and other styles for mobile screens */
+  #header-top h1 {
+    font-size: 30px;
+  }
+  #header-body h2 {
+    font-size: 25px;
+  }
+  #header-body p {
+    font-size: 15px;
+  }
+  .home img {
+    width: 15%;
+  }
+  .home h5 {
+    font-size: 8px;
+  }
+  .home h4 {
+    font-size: 15px;
+  }
+  .home p {
+    font-size: 8px;
+  }
+  .Footer p,
+  ul {
+    color: #fff;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  #footersocials .fa {
+    font-size: 8px;
+  }
+
+  /* Add any other specific styles for mobile screens */
+}
+
+/* Add a media query for screens with a minimum width of 769px (typical laptop/desktop screens) */
+@media (min-width: 1001px) {
+  /* Adjust the font size and other styles for laptop/desktop screens */
+  .Body {
+    font-size: 20px;
+  }
+  #header-img {
+    width: 750px; /* Adjust the width for larger screens */
+  }
+  /* Add any other specific styles for laptop/desktop screens */
+}
